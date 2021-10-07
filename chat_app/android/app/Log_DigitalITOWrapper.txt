@@ -1,0 +1,4 @@
+DigitalITOWrapper::GetExecutablePath() - Error getting Module Filename
+Embedded zip contains 15 entries.  Total size: 69192266
+Archive unpacked successfully.
+Found the tag freeGameRedeemOfferId
