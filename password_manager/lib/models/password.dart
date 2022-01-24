@@ -3,6 +3,7 @@ class Password {
   final String password;
   final String logoUrl;
   final DateTime date;
+  final String notes;
 
-  Password({this.date, this.logoUrl, this.password, this.url});
+  Password({this.date, this.logoUrl, this.password, this.url, this.notes});
 }
