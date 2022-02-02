@@ -1,5 +1,5 @@
-import 'package:flutter_bloc_demo/logic/models/album.dart';
-import 'package:flutter_bloc_demo/logic/models/user.dart';
+import '../logic/models/album.dart';
+import '../logic/models/user.dart';
 import 'package:http/http.dart' as http;
 
 abstract class AlbumsRepo {

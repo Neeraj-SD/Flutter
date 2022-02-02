@@ -1,4 +1,4 @@
-import 'package:flutter_bloc_demo/core/errors/exceptions.dart';
+import '../../../../core/errors/exceptions.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 

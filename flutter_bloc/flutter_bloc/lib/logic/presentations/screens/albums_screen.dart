@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_demo/logic/cubit/album_cubit.dart';
+import '../../cubit/album_cubit.dart';
 
 class AlbumsScreen extends StatelessWidget {
   const AlbumsScreen({Key? key}) : super(key: key);

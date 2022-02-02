@@ -1,9 +1,8 @@
 import 'package:bloc/bloc.dart';
-import 'package:flutter_bloc_demo/logic/models/user.dart';
 import 'package:meta/meta.dart';
 
-import 'package:flutter_bloc_demo/logic/models/album.dart';
-import 'package:flutter_bloc_demo/repo/services.dart';
+import '../../repo/services.dart';
+import '../models/album.dart';
 
 part 'album_state.dart';
 

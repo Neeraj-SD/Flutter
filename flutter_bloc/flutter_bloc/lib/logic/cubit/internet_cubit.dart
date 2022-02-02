@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:connectivity/connectivity.dart';
-import 'package:flutter_bloc_demo/constants/enum.dart';
+import '../../constants/enum.dart';
 import 'package:meta/meta.dart';
 
 part 'internet_state.dart';

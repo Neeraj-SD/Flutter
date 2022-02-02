@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 
-import 'package:flutter_bloc_demo/Features/UsersList/domain/entities/post.dart';
-import 'package:flutter_bloc_demo/Features/UsersList/domain/repositories/posts_repository.dart';
-import 'package:flutter_bloc_demo/core/errors/failures.dart';
-import 'package:flutter_bloc_demo/core/usecases/usecase.dart';
+import '../entities/post.dart';
+import '../repositories/posts_repository.dart';
+import '../../../../core/errors/failures.dart';
+import '../../../../core/usecases/usecase.dart';
 
 class GetListPosts implements UseCase<List<Post>, NoParams> {
   final PostsRepository repository;

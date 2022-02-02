@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_demo/Features/UsersList/presentation/cubit/posts_list_cubit.dart';
+import '../cubit/posts_list_cubit.dart';
 
 class PostsListScreen extends StatelessWidget {
   const PostsListScreen({Key? key}) : super(key: key);
@@ -24,7 +24,7 @@ class PostsListScreen extends StatelessWidget {
                       .read<PostsListCubit>()
                       .setSelectedPostId(state.posts[index]);
                   await Navigator.of(context).pushNamed('/postsExpanded');
-                  context.read<PostsListCubit>().;
+                  // context.read<PostsListCubit>().;
                 },
                 child: ListTile(
                   // dense: true,

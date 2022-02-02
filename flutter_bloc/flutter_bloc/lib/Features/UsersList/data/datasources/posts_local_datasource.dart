@@ -1,5 +1,5 @@
-import 'package:flutter_bloc_demo/Features/UsersList/data/models/post_model.dart';
-import 'package:flutter_bloc_demo/core/errors/exceptions.dart';
+import '../models/post_model.dart';
+import '../../../../core/errors/exceptions.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class PostsLocalDataSource {

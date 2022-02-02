@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_demo/constants/enum.dart';
-import 'package:flutter_bloc_demo/constants/enum.dart';
-import 'package:flutter_bloc_demo/logic/cubit/counter_cubit.dart';
-import 'package:flutter_bloc_demo/logic/cubit/internet_cubit.dart';
+import '../../../Features/Auth/presentation/cubit/auth_cubit.dart';
+import '../../../constants/enum.dart';
+import '../../../constants/enum.dart';
+import '../../cubit/counter_cubit.dart';
+import '../../cubit/internet_cubit.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -112,6 +113,18 @@ class HomeScreen extends StatelessWidget {
               onPressed: () async =>
                   await Navigator.of(context).pushNamed('/posts'),
               child: const Text('Posts'),
+            ),
+            BlocBuilder<AuthCubit, AuthState>(
+              builder: (context, state) {
+                if (state is Loading) {
+                  return const CircularProgressIndicator();
+                } else {
+                  return ElevatedButton(
+                    onPressed: () async => context.read<AuthCubit>().login(),
+                    child: const Text('Sign In'),
+                  );
+                }
+              },
             ),
           ],
         ),

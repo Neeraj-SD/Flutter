@@ -1,10 +1,11 @@
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_bloc_demo/Features/UsersList/presentation/cubit/posts_list_cubit.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:path_provider/path_provider.dart';
 
+import 'Features/Auth/presentation/cubit/auth_cubit.dart';
+import 'Features/UsersList/presentation/cubit/posts_list_cubit.dart';
 import 'injection_container.dart' as di;
 import 'logic/cubit/album_cubit.dart';
 import 'logic/cubit/counter_cubit.dart';
@@ -53,6 +54,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => di.sl<PostsListCubit>(),
+        ),
+        BlocProvider(
+          create: (context) => di.sl<AuthCubit>(),
         ),
       ],
       child: MaterialApp(

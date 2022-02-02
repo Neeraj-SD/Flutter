@@ -1,4 +1,4 @@
-import 'package:flutter_bloc_demo/Features/UsersList/domain/entities/post.dart';
+import '../../domain/entities/post.dart';
 import 'dart:convert';
 
 List<PostModel> postListModelFromJson(String str) =>

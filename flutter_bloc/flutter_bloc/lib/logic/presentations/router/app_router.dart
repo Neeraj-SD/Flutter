@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_demo/Features/UsersList/presentation/screens/post_expanded_screen.dart';
-import 'package:flutter_bloc_demo/Features/UsersList/presentation/screens/posts_list_screen.dart';
+import '../../../Features/UsersList/presentation/screens/post_expanded_screen.dart';
+import '../../../Features/UsersList/presentation/screens/posts_list_screen.dart';
 
 import '../screens/albums_screen.dart';
 import '../screens/home_screen.dart';

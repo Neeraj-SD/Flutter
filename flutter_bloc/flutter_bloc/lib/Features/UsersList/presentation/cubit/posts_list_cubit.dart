@@ -22,5 +22,5 @@ class PostsListCubit extends Cubit<PostsListState> {
 
   void setSelectedPostId(Post post) => emit(Selected(post: post));
 
-  void setLoaded() => emit(Loaded());
+  // void setLoaded() => emit();
 }
